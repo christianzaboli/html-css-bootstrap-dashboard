@@ -21,7 +21,6 @@
 
     <!-- LINK GOOGLE FONTS --------------- -->
 
-
     <link rel="stylesheet" href="css/style.css">
 
     <title>Bootstrap dashboard</title>
@@ -32,13 +31,15 @@
         <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Fifth navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="img/duck.png" alt="Logo Brand" width="60px"
-                        height="60px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        height="60px"></a>  <!-- ** LOGO ** -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarsExample05">
+                </button>   <!-- ** HAMBURGER MENU ** -->
+
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
                         </li>
@@ -63,7 +64,8 @@
         </div>
         <div class="container mt-4 table-responsive">   <!-- ** TABELLA ** -->
             <table class="table table-striped table-hover align-middle">
-                <thead>
+
+                <thead> <!-- ** HEAD TABELLA ** -->
                     <tr>
                         <th class="col-6">Titolo</th>
                         <th class="col-2 d-none d-lg-table-cell d-md-none">Data Prestito</th>
@@ -71,8 +73,10 @@
                         <th class="col-2 text-center">Azioni</th>
                     </tr>
                 </thead>
+
                 <tbody> <!-- ** CONTENUTO TABELLA ** -->
-                    <tr>
+                    
+                    <tr>    <!-- ** I pilastri della Terra ** -->
                         <td scope="row">I pilastri della Terra</td>
                         <td class="d-none d-lg-table-cell d-md-none">-</td>
                         <td><span class="badge bg-success">Disponibile</span></td>
@@ -81,6 +85,118 @@
                             <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
+
+                    <tr>    <!-- ** I promessi sposi ** -->
+                        <td scope="row">I promessi sposi</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Il signore degli anelli ** -->
+                        <td scope="row">Il signore degli anelli</td>
+                        <td class="d-none d-lg-table-cell d-md-none">18/10/2023</td>
+                        <td><span class="badge bg-warning">In prestito</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Harry Potter e la pietra filosofale ** -->
+                        <td scope="row">Harry Potter e la pietra filosofale</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Il codice Da Vinci ** -->
+                        <td scope="row">Il codice Da Vinci</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-danger">Non disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Shining ** -->
+                        <td scope="row">Shining</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** La divina commedia ** -->
+                        <td scope="row">La divina commedia</td>
+                        <td class="d-none d-lg-table-cell d-md-none">21/09/2023</td>
+                        <td><span class="badge bg-warning">In prestito</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Il trono di spade ** -->
+                        <td scope="row">Il trono di spade</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Il mondo di Sofia ** -->
+                        <td scope="row">Il mondo di Sofia</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-danger">Non disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Le cronache di Narnia: il leone, la strega e l'armadio ** -->
+                        <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td class="d-none d-lg-table-cell d-md-none">25/07/2023</td>
+                        <td><span class="badge bg-warning">In prestito</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** Il piccolo principe ** -->
+                        <td scope="row">Il piccolo principe</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                    <tr>    <!-- ** La storia infinita ** -->
+                        <td scope="row">La storia infinita</td>
+                        <td class="d-none d-lg-table-cell d-md-none">-</td>
+                        <td><span class="badge bg-success">Disponibile</span></td>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+
                 </tbody>
             </table>
         </div>
