@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Christian Zaboli Vedovi">
-    <link rel="shortcut icon" href="img/duck.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/duck.png" type="image/x-icon">
 
     <!-- LINK FONTAWESOME --------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -24,16 +25,17 @@
 
     <title>Aggiungi un libro</title>
 </head>
+
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Fifth navbar example" >
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark" aria-label="Fifth navbar example">
             <div class="container-fluid">
                 <!-- ** LOGO ** -->
                 <a class="navbar-brand" href="../index.html"><img src="../img/duck.png" alt="Logo Brand" width="60px"
                         height="60px"></a>
 
                 <!-- ** HAMBURGER MENU ** -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -42,7 +44,8 @@
                 <!-- ** NAV MENU ** -->
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"> <a class="nav-link" aria-current="page" href="../index.html">Catalogo Libri</a>
+                        <li class="nav-item"> <a class="nav-link" aria-current="page" href="../index.html">Catalogo
+                                Libri</a>
                         </li>
                         <li class="nav-item"> <a class="nav-link" href="#">Anagrafica Utenti</a> </li>
                         <li class="nav-item"> <a class="nav-link" href="#">Storico Prestiti</a> </li>
@@ -52,9 +55,77 @@
             </div>
         </nav>
     </header>
-    
-    <main>
 
+    <main>
+        <div class="container mt-4">
+
+            <h1>Nuovo Libro</h1>
+
+            <form class="row mt-5">
+
+                <div class="col-6 mb-3">
+                    <label for="name" class="form-label">Nome Autore</label>
+                    <input type="text" class="form-control" id="name" aria-label="First name"
+                        placeholder="Inserisci il nome dell'autore">
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="surname" class="form-label">Cognome Autore</label>
+                    <input type="text" class="form-control" id="surname" placeholder="Inserisci il cognome dell'autore">
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="title" aria-label="Last name"
+                        placeholder="Inserisci il titolo del libro">
+                    <div id="emailHelp" class="form-text">Titolo versione italiana</div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <label for="genere" class="form-label">Genere</label>
+                    <select class="form-select" id="genere">
+                        <option selected="">Scegli il genere</option>
+                        <option value="1">Maschio</option>
+                        <option value="2">Femmina</option>
+                        <option value="3">AH-64 Apache</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <label for="number" class="form-label">Anno di pubblicazione</label>
+                    <input type="number" class="form-control" id="number" aria-label="Year"
+                        placeholder="Inserisci l'anno">
+                </div>
+
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <label for="text" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="text" aria-label="ISBN# code"
+                        placeholder="Inserisci il codice ISBN#">
+                </div>
+                <div class="col">
+                    <hr class="col-12 my-4">
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="notes" class="form-label">Note</label>
+                    <textarea class="form-control" id="notes" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12 mb-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col">    
+                    <button type="submit" class="btn btn-primary">Aggiungi libro</button>
+                </div>
+            </form>
+
+        </div>
     </main>
 </body>
+
 </html>
